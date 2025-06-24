@@ -1,0 +1,11 @@
+---
+title: "Why Quarto?"
+# author: "Tristan O'Malley"
+date: "2025-06-24"
+categories: [news]
+image: quarto-logo.jpeg
+---
+
+Why did I choose quarto for building my blog?
+
+I was looking for a simple way to publish posts. I tried to learn a little bit of HTML and CSS. However, I then realized that organizing those files is not an easy task for me. And, in fact, I did not want to be worried about that! All I want was a simple tool that allows me to write some text and maybe provide some images, and then tool takes care of the rest by rendering it to HTML format. I knew about quarto and I realized that it has supports for building blogs! I can write stuff in MarkDown and Quarto takes care of the rest! 

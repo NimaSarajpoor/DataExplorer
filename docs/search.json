@@ -7,6 +7,13 @@
     "text": "I am Nima (NEE-MA). What you see here is created by Quarto! I did my PhD in analyzing renewable energy data. I also contribute to open-source projects. I am currently working as Machine Learning Engineer in the financial corporation Manulife."
   },
   {
+    "objectID": "posts/why-quarto/index.html",
+    "href": "posts/why-quarto/index.html",
+    "title": "Why Quarto?",
+    "section": "",
+    "text": "Why did I choose quarto for building my blog?\nI was looking for a simple way to publish posts. I tried to learn a little bit of HTML and CSS. However, I then realized that organizing those files is not an easy task for me. And, in fact, I did not want to be worried about that! All I want was a simple tool that allows me to write some text and maybe provide some images, and then tool takes care of the rest by rendering it to HTML format. I knew about quarto and I realized that it has supports for building blogs! I can write stuff in MarkDown and Quarto takes care of the rest!"
+  },
+  {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Welcome To My Blog",
@@ -18,6 +25,6 @@
     "href": "index.html",
     "title": "DataExplorer",
     "section": "",
-    "text": "Welcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 24, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Welcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWhy Quarto?\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 24, 2025\n\n\n\n\n\nNo matching items"
   }
 ]
