@@ -1,9 +1,10 @@
 ---
 title: "args and kwargs in Python"
+description: "Understanding *args and **kwargs in Python functions"
 date: "2025-06-25"
 categories:
   - python
-# image: interest-rate.webp
+image: args_kwargs.png
 jupyter: python3
 ---
 
