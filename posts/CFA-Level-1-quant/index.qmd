@@ -1,0 +1,8 @@
+---
+title: "CFA Level1: quant"
+date: "2025-06-25"
+categories: [news]
+# image: quarto-logo.jpeg
+---
+
+This post is for sharing my summary of the topic "quant" of CFA Level 1.

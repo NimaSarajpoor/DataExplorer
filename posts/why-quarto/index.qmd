@@ -1,8 +1,8 @@
 ---
 title: "Why Quarto?"
 # author: "Tristan O'Malley"
-date: "2025-06-24"
-categories: [news]
+date: "2025-06-25"
+categories: [Finance][CFA][Quant]
 image: quarto-logo.jpeg
 ---
 
