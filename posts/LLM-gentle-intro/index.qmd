@@ -7,5 +7,43 @@ categories:
 image: LLM.jpeg
 ---
 
-This is based on the Sebastian Raschka book "Build LLM from Scratch". Let's get started.
+The information provided below is based on the Sebastian Raschka book "Build LLM from Scratch". 
 
+
+## Intro
+
+LLM stands for Large Language Model. This model is a (large) deep neural network trained on a large amount of data. 
+At its core, LLM uses "transformer", an architecture that allows it to pay attention to different parts of input selectively.
+
+What can LLM do for us?
+* Text generation: LLM can generate text based on a given prompt, which can be used for creative writing, content generation, and more.
+* Text generation with control: LLM can generate text with specific attributes, such as style, tone, and sentiment, which can be used for personalized content generation, marketing, and more.
+* Text completion: LLM can complete a given text based on the context, which can be used for auto-completion, code generation, and more.
+* Text classification: LLM can classify text into different categories, which can be used for sentiment analysis, topic classification, and more.
+* Text summarization: LLM can summarize a given text, which can be used for news summarization, document summarization, and more.
+* Text translation: LLM can translate text from one language to another, which can be used for machine translation, localization, and more.
+* Text question answering: LLM can answer questions based on a given text, which can be used for information retrieval, chatbots, and more.
+* Text sentiment analysis: LLM can analyze the sentiment of a given text, which can be used for social media analysis, customer feedback analysis, and more.
+
+So, LLM can be useful when we deal with parsing and generating text. 
+
+
+## Stages of building LLM
+There are several ready-to-use LLMs available, such as OpenAI's GPT-3 or Google's BERT. However, you may want to build your own custom-built LLM for specific tasks. One example is BloombergGPT, which is a custom-built LLM based on financial data. Why should you want to build your own LLM?
+* Customization: You can tailor the model to your specific needs and requirements.
+* Control: You have full control over the model architecture, training data, and hyperparameters.
+* Privacy: You can keep your data private and secure, without relying on third-party providers.
+* Cost: You can save costs by using your own hardware and resources, rather than paying for cloud-based services.  
+* Performance: You can optimize the model for your specific use case, which can lead to better performance and accuracy.
+
+The general process of building LLM consists of two stages:
+1. **Pre-training**: This stage involves training the model on a large corpus of text data to learn the underlying patterns and relationships in the language. The model learns to predict the next word in a sentence given the previous words, which helps it understand the structure and semantics of the language.
+2. **Fine-tuning**: This stage involves training the pre-trained model (a.k.a foundation model) on a smaller, task-specific dataset to adapt it to a specific task or domain. Fine-tuning allows the model to learn the nuances and specifics of the task, improving its performance and accuracy.
+
+
+Diagram: <br>
+```mermaid
+flowchart TD
+    A[Raw unlabeled text data] --> B[pre-training]
+    B --> C[foundation model]
+```
