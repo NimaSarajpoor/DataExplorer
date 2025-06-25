@@ -42,3 +42,28 @@ Interest rates are composed of several components, which can be summarized as fo
 ${
   r = r_{real} + r_{inflation} + r_{risk} + r_{liquidity} + r_{maturity}
 }$
+
+* $r_{real}$: is "real risk-free interest rate". This is a single-period interest rate that is 
+  expected when there is no other risks or inflation. 
+
+* $r_{inflation}$: is the inflation premium. It compensates investors for the expected inflation rate. 
+
+* $r_{risk}$: is the default risk permium. It compensates investors for the risk of default. This is the risk that the borrower will not be able to 
+  repay the loan.
+
+* $r_{liquidity}$: is the liquidity premium. Itcompensates investors for the risk of not being able to sell the asset quickly at a fair price.
+
+* $r_{maturity}$: is the maturity premium. It compensates investors for the increased sensitivity
+of the market value of debt to a change in market interest rates as maturity
+is extended.
+
+Note that $r_{real} + r_{inflation}$ is the nominal risk-free interest rate.
+
+## Present Value and Future Value
+
+In this section, we will try to understand the relationship between Present Value (PV) and Future Value (FV)
+
+### FV of a single cash flow
+
+For the given inital investment, $PV$, and a given interest rate, $r$, the future value of the investment after $n$ periods is:
+$FV_{n}$ = PV \times (1+r)^{n}$
