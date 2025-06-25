@@ -1,0 +1,8 @@
+---
+title: "Interest Rates, Present Value, and Future Value"
+date: "2025-06-25"
+categories: [quant]
+image: thumbnail.jpg
+---
+
+test text
