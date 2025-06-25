@@ -1,12 +1,11 @@
 ---
-title: "CFA Level 1"
-listing:
-  contents: posts-CFA
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+title: "Interest Rates, Present Value, and Future Value"
+date: "2025-06-25"
+categories:
+  - CFA
+  - Quant
+image: interest-rate.webp
 ---
+
+As I go through the CFA materials, I would like to share the summary of my studies here!
+
