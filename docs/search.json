@@ -11,7 +11,7 @@
     "href": "posts/why-quarto/index.html",
     "title": "Why Quarto?",
     "section": "",
-    "text": "Why did I choose quarto for building my blog?\nI was looking for a simple way to publish posts. I tried to learn a little bit of HTML and CSS. However, I then realized that organizing those files is not an easy task for me. And, in fact, I did not want to be worried about that! All I want was a simple tool that allows me to write some text and maybe provide some images, and then tool takes care of the rest by rendering it to HTML format. I knew about quarto and I realized that it has supports for building blogs! I can write stuff in MarkDown and Quarto takes care of the rest!"
+    "text": "Why did I choose quarto for building my blog?\nI was looking for a simple way to publish posts. I tried to learn a little bit of HTML and CSS. But, I realized that organizing those files is not an easy task for me. And, in fact, I did not want to be worried about that! All I want was a simple tool that allows me to write some text and maybe provide some images, and then the tool can take care of the rest by rendering it to HTML format. There exists different static site generator, like HUGO or ASTRO. And maybe there are better choice. I decided to go with quarto because I was a bit familiar with it already and its guide for setting up blog was very straightforward."
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -25,6 +25,6 @@
     "href": "index.html",
     "title": "DataExplorer",
     "section": "",
-    "text": "Welcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWhy Quarto?\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 24, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Welcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWhy Quarto?\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 24, 2025\n\n\n\n\n\n\nNo matching items"
   }
 ]
