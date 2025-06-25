@@ -7,5 +7,15 @@ categories:
 image: interest-rate.webp
 ---
 
-As I go through the CFA materials, I would like to share the summary of my studies here!
+## Introduction
+
+What is the value of an asset? It basically reflects the worth of a stream of future cash flows. 
+To determine the value of an asset, we need to understand the "time value of money". 
+The "time value of money" deals with equivalence relationships between cash flows with different dates.
+
+
+## Interest Rates
+
+Let's start with a quick example: Do you agree to receive $9500 today, and, in return, pay $10000 today?
+
 

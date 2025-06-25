@@ -18,7 +18,21 @@
     "href": "posts/CFA-Level-1-quant/index.html",
     "title": "Interest Rates, Present Value, and Future Value",
     "section": "",
-    "text": "As I go through the CFA materials, I would like to share the summary of my studies here!"
+    "text": "What is the value of an asset? It basically reflects the worth of a stream of future cash flows. To determine the value of an asset, we need to understand the “time value of money”. The “time value of money” deals with equivalence relationships between cash flows with different dates."
+  },
+  {
+    "objectID": "posts/CFA-Level-1-quant/index.html#introduction",
+    "href": "posts/CFA-Level-1-quant/index.html#introduction",
+    "title": "Interest Rates, Present Value, and Future Value",
+    "section": "",
+    "text": "What is the value of an asset? It basically reflects the worth of a stream of future cash flows. To determine the value of an asset, we need to understand the “time value of money”. The “time value of money” deals with equivalence relationships between cash flows with different dates."
+  },
+  {
+    "objectID": "posts/CFA-Level-1-quant/index.html#interest-rates",
+    "href": "posts/CFA-Level-1-quant/index.html#interest-rates",
+    "title": "Interest Rates, Present Value, and Future Value",
+    "section": "Interest Rates",
+    "text": "Interest Rates\nLet’s start with a quick example: Do you agree to receive $9500 today, and, in return, pay $10000 today?"
   },
   {
     "objectID": "posts/welcome/index.html",
