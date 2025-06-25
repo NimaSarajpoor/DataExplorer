@@ -56,4 +56,7 @@ in the pre-training stage, the model learns the structure and semantics of the l
 
 * labled data: This is the data that is used to fine-tune the model. It can be any text data that is labeled for a specific task, such as sentiment analysis, text classification, or question answering. For instance, if we want to fine-tune the model for sentiment analysis, we can use a dataset of movie reviews labeled as positive or negative.
 
-* fine-tuned LLM: This is the final model that has been fine-tuned on the labeled data for a specific task. It can be used for various applications, such as sentiment analysis, text classification, or question answering.
+* fine-tuned LLM: This is the final model that has been fine-tuned on the labeled data for a specific task. It can be used for various applications, such as sentiment analysis, text classification, or question answering. 
+
+**Note:** There are two popular approaches for fine-tuning LLMS: (i) instruction fine-tuning and (ii) classification fine-tuning. We will look at them later but for now, let's provide a brief overview. In the "instruction fine-tuning" approach, data consists of pairs of (instruction, answer). In the "classification fine-tuning" approach, however, the data contains pairs of (text, label). 
+
