@@ -57,7 +57,7 @@ ${
 of the market value of debt to a change in market interest rates as maturity
 is extended.
 
-Note that $r_{real} + r_{inflation}$ is the nominal risk-free interest rate.
+Note that $r_{real} + r_{inflation}$ is known as the nominal risk-free interest rate.
 
 ## Present Value and Future Value
 
@@ -66,4 +66,4 @@ In this section, we will try to understand the relationship between Present Valu
 ### FV of a single cash flow
 
 For the given inital investment, $PV$, and a given interest rate, $r$, the future value of the investment after $n$ periods is:
-$FV_{n}$ = PV \times (1+r)^{n}$
+$FV_{n} = PV \times (1+r)^{n}$
