@@ -1,8 +1,8 @@
 {
-  "hash": "6b7ae5e4de1e28d48a3ea0224a2202fa",
+  "hash": "d52180ba4c276bb4868e9478a49e64b2",
   "result": {
     "engine": "jupyter",
-    "markdown": "---\ntitle: \"args and kwargs in Python\"\ndate: \"2025-06-25\"\ncategories:\n  - python\n# image: interest-rate.webp\njupyter: python3\n---\n\nWhat are *args and **kwargs in Python?\n\nI guess you have seen this syntax in Python functions, but you may not know what it means. Let's taka a look at it!\n\n::: {#d430c390 .cell execution_count=1}\n``` {.python .cell-code}\ndef my_function(name, *args, **kwargs):\n    print(\"args:\", args)\n    print(\"kwargs:\", kwargs)    \n\n    return\n\nmy_function('nima', 1, 2, 3, a=4, b=5)\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nargs: (1, 2, 3)\nkwargs: {'a': 4, 'b': 5}\n```\n:::\n:::\n\n\n",
+    "markdown": "---\ntitle: \"args and kwargs in Python\"\ndescription: \"Understanding *args and **kwargs in Python functions\"\ndate: \"2025-06-25\"\ncategories:\n  - python\nimage: args_kwargs.png\njupyter: python3\n---\n\nWhat are *args and **kwargs in Python?\n\nI guess you have seen this syntax in Python functions, but you may not know what it means. Let's taka a look at it!\n\n::: {#372ed615 .cell execution_count=1}\n``` {.python .cell-code}\ndef my_function(name, *args, **kwargs):\n    print(\"args:\", args)\n    print(\"kwargs:\", kwargs)    \n\n    return\n\nmy_function('nima', 1, 2, 3, a=4, b=5)\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nargs: (1, 2, 3)\nkwargs: {'a': 4, 'b': 5}\n```\n:::\n:::\n\n\nAs you can see, `args` is a variable of type `tuple`, and `kwargs` is a variable of type `dict`. Note that `args` can take any number of positional arguments, and `kwargs` can take any number of keyword arguments.\n\nTo read more, see: https://third-bit.com/sdxpy/oop/#oop-args\n\n",
     "supporting": [
       "index_files"
     ],

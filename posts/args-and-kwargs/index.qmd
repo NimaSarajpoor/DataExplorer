@@ -24,3 +24,5 @@ my_function('nima', 1, 2, 3, a=4, b=5)
 
 
 As you can see, `args` is a variable of type `tuple`, and `kwargs` is a variable of type `dict`. Note that `args` can take any number of positional arguments, and `kwargs` can take any number of keyword arguments.
+
+To read more, see: https://third-bit.com/sdxpy/oop/#oop-args

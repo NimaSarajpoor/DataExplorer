@@ -95,7 +95,7 @@
     "href": "posts/args-and-kwargs/index.html",
     "title": "args and kwargs in Python",
     "section": "",
-    "text": "What are *args and **kwargs in Python?\nI guess you have seen this syntax in Python functions, but you may not know what it means. Let’s taka a look at it!\n\ndef my_function(name, *args, **kwargs):\n    print(\"args:\", args)\n    print(\"kwargs:\", kwargs)    \n\n    return\n\nmy_function('nima', 1, 2, 3, a=4, b=5)\n\nargs: (1, 2, 3)\nkwargs: {'a': 4, 'b': 5}"
+    "text": "What are *args and **kwargs in Python?\nI guess you have seen this syntax in Python functions, but you may not know what it means. Let’s taka a look at it!\n\ndef my_function(name, *args, **kwargs):\n    print(\"args:\", args)\n    print(\"kwargs:\", kwargs)    \n\n    return\n\nmy_function('nima', 1, 2, 3, a=4, b=5)\n\nargs: (1, 2, 3)\nkwargs: {'a': 4, 'b': 5}\n\n\nAs you can see, args is a variable of type tuple, and kwargs is a variable of type dict. Note that args can take any number of positional arguments, and kwargs can take any number of keyword arguments.\nTo read more, see: https://third-bit.com/sdxpy/oop/#oop-args"
   },
   {
     "objectID": "posts/why-quarto/index.html",

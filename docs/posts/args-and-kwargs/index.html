@@ -191,7 +191,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <p>What are *args and **kwargs in Python?</p>
 <p>I guess you have seen this syntax in Python functions, but you may not know what it means. Let’s taka a look at it!</p>
-<div id="d430c390" class="cell" data-execution_count="1">
+<div id="372ed615" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> my_function(name, <span class="op">*</span>args, <span class="op">**</span>kwargs):</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"args:"</span>, args)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"kwargs:"</span>, kwargs)    </span>
@@ -204,6 +204,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 kwargs: {'a': 4, 'b': 5}</code></pre>
 </div>
 </div>
+<p>As you can see, <code>args</code> is a variable of type <code>tuple</code>, and <code>kwargs</code> is a variable of type <code>dict</code>. Note that <code>args</code> can take any number of positional arguments, and <code>kwargs</code> can take any number of keyword arguments.</p>
+<p>To read more, see: https://third-bit.com/sdxpy/oop/#oop-args</p>
 
 
 
