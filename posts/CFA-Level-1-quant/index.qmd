@@ -28,4 +28,17 @@ $r = \frac{500}{9500} = 0.0526$
 
 So, in this example, the rate of return is 5.26%.
 
+We can look at the interest rate from three different perspectives.
+1. It can be considered as "required" rate of return, which is the minimum interest rate that an investor 
+should receive to accept an investment.
+2. It can be considered as "discount rate". In the example above, 5.26% is the discount rate that
+discounts the future cash flow of $1000 to determine the present value of $950.
+3. It can be considered as "opportunity cost". For instace, if we decide to not invest $950, and spend it instead, 
+we are foregoing the opportunity to earn 5.26% on that amount.
 
+## Components of Interest Rates
+Interest rates are composed of several components, which can be summarized as follows:
+
+${
+  r = r_{real} + r_{inflation} + r_{risk} + r_{liquidity} + r_{maturity}
+}$

@@ -32,7 +32,14 @@
     "href": "posts/CFA-Level-1-quant/index.html#interest-rates",
     "title": "Interest Rates, Present Value, and Future Value",
     "section": "Interest Rates",
-    "text": "Interest Rates\nLet’s start with a quick example: Do you agree to pay $1000 today, and, in return, receive $950 today? Of course you don’t! You are basically losing $50 here! But… what if you need to pay it one year from now? This might be okay. A $1000 in one year from now should be worth less than $1000 today. So, it sounds to be fair to discount the (future) $1000 to calculate the amount that is received today.\nThe interest rate, \\(r\\), is a rate of return that reflects the relationship between differently dated cash flows. In our example above, $500 is the compensation required for paying $10000 one year from now.\n\\(r = \\frac{500}{9500} = 0.0526\\)\nSo, in this example, the rate of return is 5.26%."
+    "text": "Interest Rates\nLet’s start with a quick example: Do you agree to pay $1000 today, and, in return, receive $950 today? Of course you don’t! You are basically losing $50 here! But… what if you need to pay it one year from now? This might be okay. A $1000 in one year from now should be worth less than $1000 today. So, it sounds to be fair to discount the (future) $1000 to calculate the amount that is received today.\nThe interest rate, \\(r\\), is a rate of return that reflects the relationship between differently dated cash flows. In our example above, $500 is the compensation required for paying $10000 one year from now.\n\\(r = \\frac{500}{9500} = 0.0526\\)\nSo, in this example, the rate of return is 5.26%.\nWe can look at the interest rate from three different perspectives. 1. It can be considered as “required” rate of return, which is the minimum interest rate that an investor should receive to accept an investment. 2. It can be considered as “discount rate”. In the example above, 5.26% is the discount rate that discounts the future cash flow of $1000 to determine the present value of $950. 3. It can be considered as “opportunity cost”. For instace, if we decide to not invest $950, and spend it instead, we are foregoing the opportunity to earn 5.26% on that amount."
+  },
+  {
+    "objectID": "posts/CFA-Level-1-quant/index.html#components-of-interest-rates",
+    "href": "posts/CFA-Level-1-quant/index.html#components-of-interest-rates",
+    "title": "Interest Rates, Present Value, and Future Value",
+    "section": "Components of Interest Rates",
+    "text": "Components of Interest Rates\nInterest rates are composed of several components, which can be summarized as follows:\n\\({\n  r = r_{real} + r_{inflation} + r_{risk} + r_{liquidity} + r_{maturity}\n}\\)"
   },
   {
     "objectID": "posts/welcome/index.html",
