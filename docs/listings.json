@@ -1,9 +1,17 @@
 [
   {
+    "listing": "/posts/CFA-Level-1-quant/index.html",
+    "items": [
+      "/posts/CFA-Level-1-quant/CFA-posts/welcome/index.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
-      "/posts/welcome/index.html",
-      "/posts/why-quarto/index.html"
+      "/posts/CFA-Level-1-quant/index.html",
+      "/posts/why-quarto/index.html",
+      "/posts/CFA-Level-1-quant/CFA-posts/welcome/index.html",
+      "/posts/welcome/index.html"
     ]
   }
 ]
