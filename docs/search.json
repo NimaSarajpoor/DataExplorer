@@ -7,11 +7,18 @@
     "text": "I am Nima (NEE-MA). What you see here is created by Quarto! I did my PhD in analyzing renewable energy data. I also contribute to open-source projects. I am currently working as Machine Learning Engineer in the financial corporation Manulife."
   },
   {
-    "objectID": "posts/why-quarto/index.html",
-    "href": "posts/why-quarto/index.html",
-    "title": "Why Quarto?",
+    "objectID": "posts/LLM-gentle-intro/index.html",
+    "href": "posts/LLM-gentle-intro/index.html",
+    "title": "A gentle intro to LLM",
     "section": "",
-    "text": "Why did I choose quarto for building my blog?\nI was looking for a simple way to publish posts. I tried to learn a little bit of HTML and CSS. But, I realized that organizing those files is not an easy task for me. And, in fact, I did not want to be worried about that! All I want was a simple tool that allows me to write some text and maybe provide some images, and then the tool can take care of the rest by rendering it to HTML format. There exists different static site generator, like HUGO or ASTRO. And maybe there are better choice. I decided to go with quarto because I was a bit familiar with it already and its guide for setting up blog was very straightforward."
+    "text": "This is based on the Sebastian Raschka book “Build LLM from Scratch”. Let’s get started."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in my blog. Welcome!\n\nMy goal is to encourage myself to write about cool stuff. This can help me with gaining new skills as well as improving my writing skills. I think my future self will thank me! I set up blog twice before but didn’t like them. I like this one though! Let’s see if I can stick to this one!!"
   },
   {
     "objectID": "posts/CFA-Level-1-quant/index.html",
@@ -49,17 +56,17 @@
     "text": "Present Value and Future Value\nIn this section, we will try to understand the relationship between Present Value (PV) and Future Value (FV)\n\nFV of a single cash flow\nFor the given inital investment, \\(PV\\), and a given interest rate, \\(r\\), the future value of the investment after one period is:  \\(FV = PV \\times (1 + r)\\)  and after \\(n\\) periods is:  \\(FV_{n} = PV \\times (1+r)^{n}\\)"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "posts/why-quarto/index.html",
+    "href": "posts/why-quarto/index.html",
+    "title": "Why Quarto?",
     "section": "",
-    "text": "This is the first post in my blog. Welcome!\n\nMy goal is to encourage myself to write about cool stuff. This can help me with gaining new skills as well as improving my writing skills. I think my future self will thank me! I set up blog twice before but didn’t like them. I like this one though! Let’s see if I can stick to this one!!"
+    "text": "Why did I choose quarto for building my blog?\nI was looking for a simple way to publish posts. I tried to learn a little bit of HTML and CSS. But, I realized that organizing those files is not an easy task for me. And, in fact, I did not want to be worried about that! All I want was a simple tool that allows me to write some text and maybe provide some images, and then the tool can take care of the rest by rendering it to HTML format. There exists different static site generator, like HUGO or ASTRO. And maybe there are better choice. I decided to go with quarto because I was a bit familiar with it already and its guide for setting up blog was very straightforward."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "DataExplorer",
     "section": "",
-    "text": "Interest Rates, Present Value, and Future Value\n\n\n\n\n\n\nCFA\n\n\nQuant\n\n\n\n\n\n\n\n\n\nJun 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWhy Quarto?\n\n\n\n\n\n\nquarto\n\n\nblog\n\n\n\n\n\n\n\n\n\nJun 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 24, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Interest Rates, Present Value, and Future Value\n\n\n\nCFA\n\nQuant\n\n\n\n\n\n\n\n\n\nJun 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWhy Quarto?\n\n\n\nquarto\n\nblog\n\n\n\n\n\n\n\n\n\nJun 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nA gentle intro to LLM\n\n\n\nLLM\n\nMachine Learning\n\n\n\n\n\n\n\n\n\nJun 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 24, 2025\n\n\n\n\n\nNo matching items"
   }
 ]

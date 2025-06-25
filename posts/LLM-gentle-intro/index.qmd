@@ -1,0 +1,11 @@
+---
+title: "A gentle intro to LLM"
+date: "2025-06-25"
+categories:
+    - LLM
+    - Machine Learning
+image: LLM.jpeg
+---
+
+This is based on the Sebastian Raschka book "Build LLM from Scratch". Let's get started.
+
