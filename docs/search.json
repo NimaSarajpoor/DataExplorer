@@ -32,7 +32,7 @@
     "href": "posts/CFA-Level-1-quant/index.html#interest-rates",
     "title": "Interest Rates, Present Value, and Future Value",
     "section": "Interest Rates",
-    "text": "Interest Rates\nLet’s start with a quick example: Do you agree to receive $950 today, and, in return, pay $1000 today?"
+    "text": "Interest Rates\nLet’s start with a quick example: Do you agree to pay $1000 today, and, in return, receive $950 today? Of course you don’t! You are basically losing $50 here! But… what if you need to pay it one year from now? This might be okay. A $1000 in one year from now should be worth less than $1000 today. So, it sounds to be fair to discount the (future) $1000 to calculate the amount that is received today.\nThe interest rate, \\(r\\), is a rate of return that reflects the relationship between differently dated cash flows. In our example above, $500 is the compensation required for paying $10000 one year from now.\n\\(r = \\frac{500}{9500} = 0.0526\\)\nSo, in this example, the rate of return is 5.26%."
   },
   {
     "objectID": "posts/welcome/index.html",
