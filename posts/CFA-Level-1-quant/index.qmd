@@ -16,6 +16,6 @@ The "time value of money" deals with equivalence relationships between cash flow
 
 ## Interest Rates
 
-Let's start with a quick example: Do you agree to receive $9500 today, and, in return, pay $10000 today?
+Let's start with a quick example: Do you agree to receive $950 today, and, in return, pay $1000 today?
 
 
