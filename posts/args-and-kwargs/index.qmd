@@ -1,0 +1,25 @@
+---
+title: "args and kwargs in Python"
+date: "2025-06-25"
+categories:
+  - python
+# image: interest-rate.webp
+jupyter: python3
+---
+
+What are *args and **kwargs in Python?
+
+I guess you have seen this syntax in Python functions, but you may not know what it means. Let's taka a look at it!
+
+```{python}
+def my_function(name, *args, **kwargs):
+    print("args:", args)
+    print("kwargs:", kwargs)    
+
+    return
+
+my_function('nima', 1, 2, 3, a=4, b=5)
+```
+
+
+As you can see, `args` is a variable of type `tuple`, and `kwargs` is a variable of type `dict`. Note that `args` can take any number of positional arguments, and `kwargs` can take any number of keyword arguments.

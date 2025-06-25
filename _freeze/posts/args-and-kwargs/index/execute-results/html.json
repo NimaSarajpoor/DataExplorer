@@ -1,0 +1,12 @@
+{
+  "hash": "6b7ae5e4de1e28d48a3ea0224a2202fa",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"args and kwargs in Python\"\ndate: \"2025-06-25\"\ncategories:\n  - python\n# image: interest-rate.webp\njupyter: python3\n---\n\nWhat are *args and **kwargs in Python?\n\nI guess you have seen this syntax in Python functions, but you may not know what it means. Let's taka a look at it!\n\n::: {#d430c390 .cell execution_count=1}\n``` {.python .cell-code}\ndef my_function(name, *args, **kwargs):\n    print(\"args:\", args)\n    print(\"kwargs:\", kwargs)    \n\n    return\n\nmy_function('nima', 1, 2, 3, a=4, b=5)\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nargs: (1, 2, 3)\nkwargs: {'a': 4, 'b': 5}\n```\n:::\n:::\n\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

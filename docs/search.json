@@ -91,6 +91,13 @@
     "text": "Present Value and Future Value\nIn this section, we will try to understand the relationship between Present Value (PV) and Future Value (FV)\n\nFV of a single cash flow\nFor the given inital investment, \\(PV\\), and a given interest rate, \\(r\\), the future value of the investment after one period is:  \\(FV = PV \\times (1 + r)\\)  and after \\(n\\) periods is:  \\(FV_{n} = PV \\times (1+r)^{n}\\)"
   },
   {
+    "objectID": "posts/args-and-kwargs/index.html",
+    "href": "posts/args-and-kwargs/index.html",
+    "title": "args and kwargs in Python",
+    "section": "",
+    "text": "What are *args and **kwargs in Python?\nI guess you have seen this syntax in Python functions, but you may not know what it means. Let’s taka a look at it!\n\ndef my_function(name, *args, **kwargs):\n    print(\"args:\", args)\n    print(\"kwargs:\", kwargs)    \n\n    return\n\nmy_function('nima', 1, 2, 3, a=4, b=5)\n\nargs: (1, 2, 3)\nkwargs: {'a': 4, 'b': 5}"
+  },
+  {
     "objectID": "posts/why-quarto/index.html",
     "href": "posts/why-quarto/index.html",
     "title": "Why Quarto?",
@@ -102,6 +109,6 @@
     "href": "index.html",
     "title": "DataExplorer",
     "section": "",
-    "text": "Interest Rates, Present Value, and Future Value\n\n\n\nCFA\n\nQuant\n\n\n\n\n\n\n\n\n\nJun 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWhy Quarto?\n\n\n\nquarto\n\nblog\n\n\n\n\n\n\n\n\n\nJun 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nA gentle intro to LLM\n\n\n\nLLM\n\nMachine Learning\n\n\n\n\n\n\n\n\n\nJun 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 24, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Interest Rates, Present Value, and Future Value\n\n\n\nCFA\n\nQuant\n\n\n\n\n\n\n\n\n\nJun 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nargs and kwargs in Python\n\n\n\npython\n\n\n\n\n\n\n\n\n\nJun 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWhy Quarto?\n\n\n\nquarto\n\nblog\n\n\n\n\n\n\n\n\n\nJun 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nA gentle intro to LLM\n\n\n\nLLM\n\nMachine Learning\n\n\n\n\n\n\n\n\n\nJun 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 24, 2025\n\n\n\n\n\nNo matching items"
   }
 ]
