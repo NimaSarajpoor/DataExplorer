@@ -107,4 +107,22 @@ $EAR = e^{r_{s}} - 1$
 
 ### Future Value of a Series of Cash Flows
 
-When we have a series of cash flows, we can calculate the future value of the series by summing the future values of each individual cash flow. TBC
+When we have a series of cash flows, we can calculate the future value of the series by summing the future values of each individual cash flow. Let's start with defining some terminolgies:
+
+* Annuity: A series of equal cash flows received at regular intervals. For instance, if you receive $1000 every year for 5 years, this is an annuity. 
+  * Ordinary Annuity: An annuity where the cash flows are received at the end of each period. For instance, if you receive $1000 at the end of each year for 5 years, this is an ordinary annuity.
+  * Annuity Due: An annuity where the cash flows are received at the beginning of each period. For instance, if you receive $1000 at the beginning of each year for 5 years, this is an annuity due. 
+
+* Perpetuity: A series of cash flows that continues indefinitely. For instance, if you receive $1000 every year forever, this is a perpetuity.
+
+**NOTE:** Another way to understand the difference between `Ordinary Annuity` and `Annuity Due` is that `Ordinary Annuity` is a series of cash flows that are received starting at t=1, and `Annuity Due` is a series of cash flows that are received starting at t=0.
+
+Now that we know the definition, we can compute their value. 
+
+#### Ordinary Annuity with payment `$A` for $n$ periods at interest rate $r$
+t=0, t=1 ($A), t=2 ($A), ..., t=n ($A) 
+
+* calculate the present value of this asset (at t=0): <br>
+$ FV_{n} = A(1 + r)^{n-1} + A(1 + r)^{n-2} + ... + A(1 + r) + A$ <br>
+$FV_{n} = A \left( (1 + r)^{n-1} + (1 + r)^{n-2} + ... + (1 + r) + 1 \right)$ <br>
+$FV_{n} = A \times \frac{(1 + r)^{n} - 1}{r}$ 

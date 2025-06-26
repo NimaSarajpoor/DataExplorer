@@ -229,9 +229,26 @@ window.Quarto = {
 </section>
 <section id="future-value-of-a-series-of-cash-flows" class="level3">
 <h3 class="anchored" data-anchor-id="future-value-of-a-series-of-cash-flows">Future Value of a Series of Cash Flows</h3>
-<p>When we have a series of cash flows, we can calculate the future value of the series by summing the future values of each individual cash flow. TBC</p>
+<p>When we have a series of cash flows, we can calculate the future value of the series by summing the future values of each individual cash flow. Let’s start with defining some terminolgies:</p>
+<ul>
+<li>Annuity: A series of equal cash flows received at regular intervals. For instance, if you receive $1000 every year for 5 years, this is an annuity.
+<ul>
+<li>Ordinary Annuity: An annuity where the cash flows are received at the end of each period. For instance, if you receive $1000 at the end of each year for 5 years, this is an ordinary annuity.</li>
+<li>Annuity Due: An annuity where the cash flows are received at the beginning of each period. For instance, if you receive $1000 at the beginning of each year for 5 years, this is an annuity due.</li>
+</ul></li>
+<li>Perpetuity: A series of cash flows that continues indefinitely. For instance, if you receive $1000 every year forever, this is a perpetuity.</li>
+</ul>
+<p><strong>NOTE:</strong> Another way to understand the difference between <code>Ordinary Annuity</code> and <code>Annuity Due</code> is that <code>Ordinary Annuity</code> is a series of cash flows that are received starting at t=1, and <code>Annuity Due</code> is a series of cash flows that are received starting at t=0.</p>
+<p>Now that we know the definition, we can compute their value.</p>
+<section id="ordinary-annuity-with-payment-a-for-n-periods-at-interest-rate-r" class="level4">
+<h4 class="anchored" data-anchor-id="ordinary-annuity-with-payment-a-for-n-periods-at-interest-rate-r">Ordinary Annuity with payment <code>$A</code> for <span class="math inline">\(n\)</span> periods at interest rate <span class="math inline">\(r\)</span></h4>
+<p>t=0, t=1 (<span class="math inline">\(A), t=2 (\)</span>A), …, t=n ($A)</p>
+<ul>
+<li>calculate the present value of this asset (at t=0): <br> $ FV_{n} = A(1 + r)^{n-1} + A(1 + r)^{n-2} + … + A(1 + r) + A$ <br> <span class="math inline">\(FV_{n} = A \left( (1 + r)^{n-1} + (1 + r)^{n-2} + ... + (1 + r) + 1 \right)\)</span> <br> <span class="math inline">\(FV_{n} = A \times \frac{(1 + r)^{n} - 1}{r}\)</span></li>
+</ul>
 
 
+</section>
 </section>
 </section>
 
