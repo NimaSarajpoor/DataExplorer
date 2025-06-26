@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-06-26">
+<meta name="description" content="Finding a roadmap for system design can be challenging!">
 
-<title>Posts – DataExplorer</title>
+<title>system design: where to start? – DataExplorer</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +25,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,77 +69,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">DataExplorer</span>
     </a>
   </div>
@@ -150,7 +92,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -173,270 +115,74 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Posts</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">system design: where to start?</h1>
+                  <div>
+        <div class="description">
+          Finding a roadmap for system design can be challenging!
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">system design</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 26, 2025</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="YmxvZw==">blog <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q0ZB">CFA <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TExN">LLM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TG90dGVyeQ==">Lottery <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFjaGluZSUyMExlYXJuaW5n">Machine Learning <span class="quarto-category-count">(2)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHJvYmFiaWxpdHk=">Probability <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cHl0aG9u">python <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UXVhbnQ=">Quant <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cXVhcnRv">quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c3lzdGVtJTIwZGVzaWdu">system design <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<section id="what-is-system-design" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-system-design">What is “system design”?</h2>
+<p>According to <a href="https://en.wikipedia.org/wiki/Systems_design">wikipedia</a>, the basic study of system design is the understanding of component parts and their subsequent interaction with one another. Systems design has appeared in a variety of fields including computer/software architecture.</p>
+</section>
+<section id="when-did-i-first-face-challenges-in-system-design" class="level2">
+<h2 class="anchored" data-anchor-id="when-did-i-first-face-challenges-in-system-design">When did I first face challenges in system design?</h2>
+<p>I was working on a project that was running 24/7. I was taksed with finding a solution for backfilling a large amount of data that was not processed in the past since the system was down. I had to think about different aspects such as: <br> * How to ensure that the system can handle the large amount of data without crashing? <br> * How to ensure that the data is processed in a timely manner? <br> * What to do if the system fails during the backfilling process? <br> * Can it run in parallel with the daily processing? Is there any dependency? <br> * What was the reason of failure? Has there been any change in the format of incoming data? <br></p>
+<p>Each system design problem is unique. However, I think there should be some ways to improve such skills. In programming, we know that each problem can be unique. But there are some practices like <a href="https://leetcode.com/">leetcode</a> that can help us to improve our skills. I think the same applies to system design. So, I did a quick search and I am going to share what I’ve found online.</p>
+</section>
+<section id="resources-to-learn-system-design" class="level2">
+<h2 class="anchored" data-anchor-id="resources-to-learn-system-design">Resources to learn system design</h2>
+<ul>
+<li><p><a href="https://www.amazon.ca/System-Design-Interview-insiders-Second/dp/B08CMF2CQF">System Design Interview – An insider’s guide</a></p></li>
+<li><p><a href="https://www.amazon.ca/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321">Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems</a></p></li>
+<li><p><a href="https://www.educative.io/courses/grokking-the-system-design-interview?utm_campaign=system_design&amp;utm_source=google&amp;utm_medium=ppc&amp;utm_content=search&amp;utm_term=course&amp;eid=5082902844932096&amp;utm_term=grokking%20the%20system%20interview&amp;utm_campaign=%5BNew%5D+System+Design-Search-EU-Nov+24&amp;utm_source=adwords&amp;utm_medium=ppc&amp;hsa_acc=5451446008&amp;hsa_cam=21874477566&amp;hsa_grp=175905880259&amp;hsa_ad=735450354425&amp;hsa_src=g&amp;hsa_tgt=kwd-903484928147&amp;hsa_kw=grokking%20the%20system%20interview&amp;hsa_mt=e&amp;hsa_net=adwords&amp;hsa_ver=3&amp;gad_source=1&amp;gad_campaignid=21874477566&amp;gbraid=0AAAAADfWLuT0LEe_NOnzSNDAv-MeepMgI&amp;gclid=EAIaIQobChMIjZaDyrWPjgMVHET_AR13_gpbEAAYASAAEgJ12PD_BwE">Grokking the System Design Interview</a></p></li>
+<li><p><a href="https://codemia.io/system-design">codemia system design</a></p></li>
+<li><p><a href="https://github.com/NimaSarajpoor/system-design-primer">system design primer</a></p></li>
+<li><p><a href="https://www.codewars.com">codewars</a></p></li>
+<li><p><a href="https://workat.tech/system-design/article/best-engineering-blogs-articles-videos-system-design-tvwa05b8bzzr">blogs to follow</a></p></li>
+</ul>
+</section>
+<section id="first-step" class="level2">
+<h2 class="anchored" data-anchor-id="first-step">First step?</h2>
+<p>I am not sure but as I was reading opinions on reddit, I realized that I should probably start with the book <a href="https://www.amazon.ca/System-Design-Interview-insiders-Second/dp/B08CMF2CQF">System Design Interview – An insider’s guide</a>.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Q0ZBJTJDUXVhbnQlMkNMb3R0ZXJ5" data-listing-date-sort="1750910400000" data-listing-file-modified-sort="1750950901548" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="322">
-<div class="thumbnail"><a href="./posts/daily-grand/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/daily-grand/daily-grand-logo.jpeg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/daily-grand/index.html" class="no-external">$1000 for life or lump sum of $7 million?</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q0ZB'); return false;">CFA</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UXVhbnQ='); return false;">Quant</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TG90dGVyeQ=='); return false;">Lottery</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/daily-grand/index.html" class="no-external">
-<p>Understanding the time value of money</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/daily-grand/index.html" class="no-external">
-<div class="listing-date">
-Jun 26, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="c3lzdGVtJTIwZGVzaWdu" data-listing-date-sort="1750910400000" data-listing-file-modified-sort="1750953224445" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="297">
-<div class="thumbnail"><a href="./posts/system-design/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/system-design/system-design.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/system-design/index.html" class="no-external">system design: where to start?</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('c3lzdGVtJTIwZGVzaWdu'); return false;">system design</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/system-design/index.html" class="no-external">
-<p>Finding a roadmap for system design can be challenging!</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/system-design/index.html" class="no-external">
-<div class="listing-date">
-Jun 26, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTJDUHJvYmFiaWxpdHk=" data-listing-date-sort="1750910400000" data-listing-file-modified-sort="1750944669806" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="415">
-<div class="thumbnail"><a href="./posts/confusion-matrix/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/confusion-matrix/image.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/confusion-matrix/index.html" class="no-external">Confusion Matrix and Conditional Probability</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWFjaGluZSUyMExlYXJuaW5n'); return false;">Machine Learning</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvYmFiaWxpdHk='); return false;">Probability</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/confusion-matrix/index.html" class="no-external">
-<p>Understanding the confusion matrix and its relation to conditional probability.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/confusion-matrix/index.html" class="no-external">
-<div class="listing-date">
-Jun 26, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Q0ZBJTJDUXVhbnQ=" data-listing-date-sort="1750824000000" data-listing-file-modified-sort="1750948141178" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1239">
-<div class="thumbnail"><a href="./posts/CFA-Level-1-quant/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/CFA-Level-1-quant/interest-rate.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/CFA-Level-1-quant/index.html" class="no-external">Interest Rates, Present Value, and Future Value</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q0ZB'); return false;">CFA</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UXVhbnQ='); return false;">Quant</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/CFA-Level-1-quant/index.html" class="no-external">
-What is the value of an asset? It basically reflects the worth of a stream of future cash flows. To determine the value of an asset, we need to understand the “time value of…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/CFA-Level-1-quant/index.html" class="no-external">
-<div class="listing-date">
-Jun 25, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="cHl0aG9u" data-listing-date-sort="1750824000000" data-listing-file-modified-sort="1750882701487" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="97">
-<div class="thumbnail"><a href="./posts/args-and-kwargs/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/args-and-kwargs/args_kwargs.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/args-and-kwargs/index.html" class="no-external">args and kwargs in Python</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/args-and-kwargs/index.html" class="no-external">
-<p>Understanding *args and **kwargs in Python functions</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/args-and-kwargs/index.html" class="no-external">
-<div class="listing-date">
-Jun 25, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="cXVhcnRvJTJDYmxvZw==" data-listing-date-sort="1750824000000" data-listing-file-modified-sort="1750872865045" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="130">
-<div class="thumbnail"><a href="./posts/why-quarto/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/why-quarto/quarto-logo.jpeg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/why-quarto/index.html" class="no-external">Why Quarto?</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cXVhcnRv'); return false;">quarto</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YmxvZw=='); return false;">blog</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/why-quarto/index.html" class="no-external">
-Why did I choose quarto for building my blog?
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/why-quarto/index.html" class="no-external">
-<div class="listing-date">
-Jun 25, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="TExNJTJDTWFjaGluZSUyMExlYXJuaW5n" data-listing-date-sort="1750824000000" data-listing-file-modified-sort="1750880568643" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1067">
-<div class="thumbnail"><a href="./posts/LLM-gentle-intro/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/LLM-gentle-intro/LLM.jpeg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/LLM-gentle-intro/index.html" class="no-external">A gentle intro to LLM</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TExN'); return false;">LLM</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWFjaGluZSUyMExlYXJuaW5n'); return false;">Machine Learning</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/LLM-gentle-intro/index.html" class="no-external">
-The information provided below is based on the Sebastian Raschka book “Build LLM from Scratch”.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/LLM-gentle-intro/index.html" class="no-external">
-<div class="listing-date">
-Jun 25, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="bmV3cw==" data-listing-date-sort="1750737600000" data-listing-file-modified-sort="1750871974378" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="66">
-<div class="thumbnail"><a href="./posts/welcome/index.html" class="no-external">
-
-<p class="card-img-top"><img src="posts/welcome/thumbnail.jpg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome/index.html" class="no-external">Welcome To My Blog</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/welcome/index.html" class="no-external">
-This is the first post in my blog. Welcome!
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-date">
-Jun 24, 2025
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
