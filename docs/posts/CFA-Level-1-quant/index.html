@@ -241,10 +241,13 @@ window.Quarto = {
 <p><strong>NOTE:</strong> Another way to understand the difference between <code>Ordinary Annuity</code> and <code>Annuity Due</code> is that <code>Ordinary Annuity</code> is a series of cash flows that are received starting at t=1, and <code>Annuity Due</code> is a series of cash flows that are received starting at t=0.</p>
 <p>Now that we know the definition, we can compute their value.</p>
 <section id="ordinary-annuity-with-payment-a-for-n-periods-at-interest-rate-r" class="level4">
-<h4 class="anchored" data-anchor-id="ordinary-annuity-with-payment-a-for-n-periods-at-interest-rate-r">Ordinary Annuity with payment <code>$A</code> for <span class="math inline">\(n\)</span> periods at interest rate <span class="math inline">\(r\)</span></h4>
-<p>t=0, t=1 (<span class="math inline">\(A), t=2 (\)</span>A), …, t=n ($A)</p>
+<h4 class="anchored" data-anchor-id="ordinary-annuity-with-payment-a-for-n-periods-at-interest-rate-r">Ordinary Annuity with payment <code>$A</code> for <code>n</code> periods at interest rate <code>r</code></h4>
+<p>timeline: t=0, t=1 (<code>$A</code>), t=2 (<code>$A</code>), …, t=n (<code>$A</code>)</p>
 <ul>
-<li>calculate the present value of this asset (at t=0): <br> $ FV_{n} = A(1 + r)^{n-1} + A(1 + r)^{n-2} + … + A(1 + r) + A$ <br> <span class="math inline">\(FV_{n} = A \left( (1 + r)^{n-1} + (1 + r)^{n-2} + ... + (1 + r) + 1 \right)\)</span> <br> <span class="math inline">\(FV_{n} = A \times \frac{(1 + r)^{n} - 1}{r}\)</span></li>
+<li><p>Calculate the future value of this asset at the end: <br> <span class="math inline">\(FV_{n} = A(1 + r)^{n-1} + A(1 + r)^{n-2} + ... + A(1 + r) + A\)</span> <br> <span class="math inline">\(FV_{n} = A \left( (1 + r)^{n-1} + (1 + r)^{n-2} + ... + (1 + r) + 1 \right)\)</span> <br> <span class="math inline">\(FV_{n} = A \times \frac{(1 + r)^{n} - 1}{r}\)</span></p></li>
+<li><p>Calculate the present value of this asset (at t=0): <br> <span class="math inline">\(PV = \frac{A}{1 + r} + \frac{A}{(1+r)^2} + ... + \frac{A}{(1+r)^{n}}\)</span> <br> <span class="math inline">\(PV = A \left( \frac{1}{1 + r} + \frac{1}{(1+r)^2} + ... + \frac{1}{(1+r)^{n}} \right)\)</span> <br></p>
+<p>with <span class="math inline">\(d = \frac{1}{1 + r}\)</span>, we will have: <br> <span class="math inline">\(PV = A \left( d + d^2 + ... + d^{n} \right)\)</span> <br> <span class="math inline">\(PV = A \cdot d \left(1 + d + ... + d^{n-1}\right)\)</span> <br> <span class="math inline">\(PV = A \cdot d \cdot \frac{d^{n} - 1}{d - 1}\)</span> <br></p>
+<p>Alternaively, we could have just used the future value <span class="math inline">\(FV_{n} = A \times \frac{(1 + r)^{n} - 1}{r}\)</span> to compute the present value as follows: <br> <span class="math inline">\(PV = \frac{FV_{n}}{(1 + r)^{n}}\)</span></p></li>
 </ul>
 
 

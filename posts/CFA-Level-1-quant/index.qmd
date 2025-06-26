@@ -119,10 +119,23 @@ When we have a series of cash flows, we can calculate the future value of the se
 
 Now that we know the definition, we can compute their value. 
 
-#### Ordinary Annuity with payment `$A` for $n$ periods at interest rate $r$
-t=0, t=1 ($A), t=2 ($A), ..., t=n ($A) 
+#### Ordinary Annuity with payment `$A` for `n` periods at interest rate `r`
+timeline: t=0, t=1 (`$A`), t=2 (`$A`), ..., t=n (`$A`) 
 
-* calculate the present value of this asset (at t=0): <br>
-$ FV_{n} = A(1 + r)^{n-1} + A(1 + r)^{n-2} + ... + A(1 + r) + A$ <br>
-$FV_{n} = A \left( (1 + r)^{n-1} + (1 + r)^{n-2} + ... + (1 + r) + 1 \right)$ <br>
-$FV_{n} = A \times \frac{(1 + r)^{n} - 1}{r}$ 
+* Calculate the future value of this asset at the end: <br>
+  $FV_{n} = A(1 + r)^{n-1} + A(1 + r)^{n-2} + ... + A(1 + r) + A$ <br>
+  $FV_{n} = A \left( (1 + r)^{n-1} + (1 + r)^{n-2} + ... + (1 + r) + 1 \right)$ <br>
+  $FV_{n} = A \times \frac{(1 + r)^{n} - 1}{r}$ 
+
+
+* Calculate the present value of this asset (at t=0): <br>
+  $PV = \frac{A}{1 + r} + \frac{A}{(1+r)^2} + ... + \frac{A}{(1+r)^{n}}$ <br>
+  $PV = A \left( \frac{1}{1 + r} + \frac{1}{(1+r)^2} + ... + \frac{1}{(1+r)^{n}} \right)$ <br>
+
+  with $d = \frac{1}{1 + r}$, we will have: <br>
+  $PV = A \left( d + d^2 + ... + d^{n} \right)$ <br>
+  $PV = A \cdot d \left(1 + d + ... + d^{n-1}\right)$ <br>
+  $PV = A \cdot d \cdot \frac{d^{n} - 1}{d - 1}$ <br>
+
+  Alternaively, we could have just used the future value $FV_{n} = A \times \frac{(1 + r)^{n} - 1}{r}$ to compute the present value as follows: <br>
+  $PV = \frac{FV_{n}}{(1 + r)^{n}}$
