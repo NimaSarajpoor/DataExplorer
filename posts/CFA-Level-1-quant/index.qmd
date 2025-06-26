@@ -4,7 +4,7 @@ date: "2025-06-25"
 categories:
   - CFA
   - Quant
-image: interest-rate.webp
+image: interest-rate.jpg
 ---
 
 ## Introduction
