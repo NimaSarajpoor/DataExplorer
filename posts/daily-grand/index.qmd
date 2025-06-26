@@ -17,13 +17,15 @@ $PV = 365000 \times \frac{(1+0.03)^{50} - 1}{0.03} \times \frac{1}{(1+0.03)^{50}
 $PV = 365000 \times \frac{(1.03)^{50} - 1}{0.03} \times \frac{1}{(1.03)^{50}}$ <br>
 $PV = 365000 \times \frac{4.384 - 1}{0.03} \times \frac{1}{4.384}$ <br>
 $PV = 365000 \times \frac{3.384}{0.03} \times \frac{1}{4.384}$ <br>
-$PV = 365000 \times 112.8 \times 0.228 = 257.4$ <br>
+$PV = 365000 \times 112.8 \times 0.228$ <br>
 $PV \approx 9387216$ <br>
 
 So, this shows that the present value of the annuity is approximately $9.4 million, which is greater than the lump sum of $7 million. Therefore, you should choose the daily payments of $1000 for life. 
 
 **NOTE:** This was a simplified calculation. In reality, you may need to think about different things like <br>
+
 * Do I live till 85 years old? If not, then is it better to take the lump sum?
 * What if bank changes the interest rate?
+
 <br>
 I've not considered these factors here, but they are important to consider in real life. How? do not know! But I think it is important to think about them!!
