@@ -72,3 +72,39 @@ $FV = PV \times (1 + r)$
 and after $n$ periods is: <br>
 $FV_{n} = PV \times (1+r)^{n}$
 
+### Non-annual compounding
+Some banks may offer an interest that is compounded more frequently than annually. For instance, they might offer a monthly compounding interest rate. Financial institutions usually quote the annual interest rate, $r_{s}$, which is known as the stated interest rate (a.k.a. quoted interest rate). For instance, a bank may state that a particular CD pays 7 percent compounded monthly. This means that the stated interest rate is 7 percent. The monthly interest rate is then calculated by dividing the stated interest rate by the number of compounding periods per year, $m$. So, in this case, the monthly interest rate is: 
+$$r_{m} = \frac{r_{s}}{m} = \frac{0.07}{12} = 0.0058333$$.
+
+The formula for future value is as follows: <br>
+$FV_{n} = PV \times (1 + \frac{r_{s}}{m})^{nm}$
+
+where $m$ is the number of compounding periods per year, and $n$ is the number of years.
+
+Let's consider an example:
+Suppose you invest $1000 in a CD that pays 7 percent interest compounded monthly for 5 years. 
+The future value of the investment at the end of 5 years is:
+
+$FV_{5} = 1000 \times (1 + \frac{0.07}{12})^{5 \times 12}$ <br>
+$FV_{5} = 1000 \times (1 + 0.0058333)^{60}$ <br>
+$FV_{5} = 1000 \times (1.0058333)^{60}$ <br>
+$FV_{5} = 1000 \times 1.48985$ <br>
+$FV_{5} = 1489.85$ <br>
+
+**NOTE**: In a special case where the interest rate is compounded continuously, the future value can be calculated using the following formula: <br>
+$FV_{n} = PV \times e^{r_{s} \cdot n}$
+
+### Effective Annual Rate (EAR)
+The Effective Annual Rate (EAR) is the annual interest rate that is equivalent to a given stated interest rate, $r_{s}$, compounded more frequently than annually. So, basically we are trying to find $EAR$ that satisfies the following equation: <br>
+$PV \times (1 + r_{s} / m)^{m} = PV \times (1 + EAR)$
+
+This can be simplified to: <br>
+$EAR = (1 + r_{s} / m)^{m} - 1$
+
+And if the stated interest rate is compounded continuously, the EAR can be calculated as: <br>
+$EAR = e^{r_{s}} - 1$
+
+
+### Future Value of a Series of Cash Flows
+
+When we have a series of cash flows, we can calculate the future value of the series by summing the future values of each individual cash flow. TBC
