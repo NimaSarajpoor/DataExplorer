@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/daily-grand/index.html",
       "/posts/confusion-matrix/index.html",
       "/posts/CFA-Level-1-quant/index.html",
       "/posts/args-and-kwargs/index.html",
