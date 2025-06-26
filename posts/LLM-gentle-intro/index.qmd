@@ -29,7 +29,8 @@ So, LLM can be useful when we deal with parsing and generating text.
 
 
 ## Stages of building LLM
-There are several ready-to-use LLMs available, such as OpenAI's GPT-3 or Google's BERT. However, you may want to build your own custom-built LLM for specific tasks. One example is BloombergGPT, which is a custom-built LLM based on financial data. Why should you want to build your own LLM?
+There are several ready-to-use LLMs available, such as OpenAI's GPT-3 or Google's BERT. However, you may want to build your own custom-built LLM for specific tasks. One example is BloombergGPT, which is a custom-built LLM based on financial data. Why should you want to build your own LLM? <br>
+
 * Customization: You can tailor the model to your specific needs and requirements.
 * Control: You have full control over the model architecture, training data, and hyperparameters.
 * Privacy: You can keep your data private and secure, without relying on third-party providers.
