@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/leet-code-first/index.html",
       "/posts/daily-grand/index.html",
       "/posts/system-design/index.html",
       "/posts/confusion-matrix/index.html",
