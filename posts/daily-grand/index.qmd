@@ -5,7 +5,6 @@ date: "2025-06-26"
 categories:
   - CFA
   - Quant
-  - Lottery
 image: daily-grand-logo.jpeg
 ---
 
