@@ -249,6 +249,21 @@ window.Quarto = {
 <p>with <span class="math inline">\(d = \frac{1}{1 + r}\)</span>, we will have: <br> <span class="math inline">\(PV = A \left( d + d^2 + ... + d^{n} \right)\)</span> <br> <span class="math inline">\(PV = A \cdot d \left(1 + d + ... + d^{n-1}\right)\)</span> <br> <span class="math inline">\(PV = A \cdot d \cdot \frac{d^{n} - 1}{d - 1}\)</span> <br></p>
 <p>Alternaively, we could have just used the future value <span class="math inline">\(FV_{n} = A \times \frac{(1 + r)^{n} - 1}{r}\)</span> to compute the present value as follows: <br> <span class="math inline">\(PV = \frac{FV_{n}}{(1 + r)^{n}}\)</span></p></li>
 </ul>
+</section>
+<section id="annuity-due-with-payment-a-for-n-periods-at-interest-rate-r" class="level4">
+<h4 class="anchored" data-anchor-id="annuity-due-with-payment-a-for-n-periods-at-interest-rate-r">Annuity Due with payment <code>$A</code> for <code>n</code> periods at interest rate <code>r</code></h4>
+<p>timeline: t=0 (<code>$A</code>), t=1 (<code>$A</code>), t=2 (<code>$A</code>), …, t=n-1 (<code>$A</code>)</p>
+<p>Let’s Calculate the present value of this asset at <code>t=0</code>: <br></p>
+<p><span class="math inline">\(PV = A + A(1+r)^{-1} + A(1+r)^{-2} + ... + A(1+r)^{n-1}\)</span> <br> <span class="math inline">\(PV = A \left(1 + (1+r)^{-1} + ... + (1+r)^{n-1}\right)\)</span> <br> <span class="math inline">\(PV = A \left(1 + d + ... + d^{n-1}\right)\)</span>, where <span class="math inline">\(d = (1+r)^{-1}\)</span> <br> <span class="math inline">\(PV = A \frac{(1 + d)^{n} - 1}{d - 1}\)</span>, where <span class="math inline">\(d = (1+r)^{-1}\)</span> <br></p>
+</section>
+<section id="perpetuity-with-payment-a-at-interest-rate-r" class="level4">
+<h4 class="anchored" data-anchor-id="perpetuity-with-payment-a-at-interest-rate-r">Perpetuity with payment <code>$A</code> at interest rate <code>r</code></h4>
+<p>timeline: t=0, t=1 (<code>$A</code>), t=2 (<code>$A</code>), …</p>
+<p><span class="math inline">\(PV = A(1+r)^{-1} + ...\)</span> <br> <span class="math inline">\(PV = Ad(1 + d + ...)\)</span>, where <span class="math inline">\(d = \frac{1}{1+r} &lt; 1\)</span> <br> <span class="math inline">\(PV = \frac{Ad}{1 - d}\)</span>, where <span class="math inline">\(d = \frac{1}{1+r}\)</span> <br> <span class="math inline">\(PV = \frac{A}{r}\)</span></p>
+<p><strong>NOTE:</strong> We can use the simple formula of <code>Perpetuity</code> to compute PV for <code>Annuity</code>. Let’s see how that works. Suppose we have an ordinary annuity with payment <code>$A</code> for <code>n</code> periods at interest rate <code>r</code>. So, the timeline looks like this: timeline: t=0, t=1 (<code>$A</code>), t=2 (<code>$A</code>), …, t=n-1 (<code>$A</code>)</p>
+<p>This can be considered as the substraction of two perpetuities: 1. A perpetuity with timeline t=0, t=1 (<code>A</code>), t=2 (<code>A</code>), … 2. A perpetuity with timeline t=0, t=1, t=2, …, t=n (<code>A</code>), t=n+1 (<code>A</code>), …</p>
+<p><span class="math inline">\(PV = PV1 - PV2\)</span>, where the <code>PV</code>s are at time <code>t=0</code> <br> <span class="math inline">\(PV = \frac{A}{r} - \frac{A}{r} \frac{1}{(1+r)^{n-1}}\)</span> <br></p>
+<p>Regarding PV2, note that <span class="math inline">\(\frac{A}{r}\)</span> gives the present value of the second perpetuity at time <code>t=n-1</code>. So, it needs to be discounted to time <code>t=0</code> by dividing it by <span class="math inline">\((1+r)^{n-1}\)</span>.</p>
 
 
 </section>

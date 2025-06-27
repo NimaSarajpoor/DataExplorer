@@ -139,3 +139,36 @@ timeline: t=0, t=1 (`$A`), t=2 (`$A`), ..., t=n (`$A`)
 
   Alternaively, we could have just used the future value $FV_{n} = A \times \frac{(1 + r)^{n} - 1}{r}$ to compute the present value as follows: <br>
   $PV = \frac{FV_{n}}{(1 + r)^{n}}$
+
+
+#### Annuity Due with payment `$A` for `n` periods at interest rate `r`
+timeline: t=0 (`$A`), t=1 (`$A`), t=2 (`$A`), ..., t=n-1 (`$A`)
+
+Let's Calculate the present value of this asset at `t=0`: <br>
+
+$PV = A + A(1+r)^{-1} + A(1+r)^{-2} + ... + A(1+r)^{n-1}$ <br>
+$PV = A \left(1 + (1+r)^{-1} + ... + (1+r)^{n-1}\right)$ <br>
+$PV = A \left(1 + d + ... + d^{n-1}\right)$, where $d = (1+r)^{-1}$ <br>
+$PV = A \frac{(1 + d)^{n} - 1}{d - 1}$, where $d = (1+r)^{-1}$ <br>
+
+#### Perpetuity with payment `$A` at interest rate `r`
+timeline: t=0, t=1 (`$A`), t=2 (`$A`), ...
+
+$PV = A(1+r)^{-1} + ...$ <br>
+$PV = Ad(1 + d + ...)$, where $d = \frac{1}{1+r} < 1$ <br>
+$PV = \frac{Ad}{1 - d}$, where $d = \frac{1}{1+r}$ <br>
+$PV = \frac{A}{r}$
+
+**NOTE:**
+We can use the simple formula of `Perpetuity` to compute PV for `Annuity`. Let's see how that works. Suppose we have an ordinary annuity with payment `$A` for `n` periods at interest rate `r`. So, the timeline looks like this:
+timeline: t=0, t=1 (`$A`), t=2 (`$A`), ..., t=n-1 (`$A`)
+
+This can be considered as the substraction of two perpetuities:
+1. A perpetuity with timeline t=0, t=1 (`A`), t=2 (`A`), ... 
+2. A perpetuity with timeline t=0, t=1, t=2, ..., t=n (`A`), t=n+1 (`A`), ...
+
+$PV = PV1 - PV2$, where the `PV`s are at time `t=0` <br>
+$PV = \frac{A}{r} - \frac{A}{r} \frac{1}{(1+r)^{n-1}}$ <br>
+
+Regarding PV2, note that $\frac{A}{r}$ gives the present value of the second perpetuity at time `t=n-1`. So, it needs to be discounted to time `t=0` by dividing it by $(1+r)^{n-1}$.
+
