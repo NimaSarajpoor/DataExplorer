@@ -264,10 +264,19 @@ window.Quarto = {
 <p>This can be considered as the substraction of two perpetuities: 1. A perpetuity with timeline t=0, t=1 (<code>A</code>), t=2 (<code>A</code>), … 2. A perpetuity with timeline t=0, t=1, t=2, …, t=n (<code>A</code>), t=n+1 (<code>A</code>), …</p>
 <p><span class="math inline">\(PV = PV1 - PV2\)</span>, where the <code>PV</code>s are at time <code>t=0</code> <br> <span class="math inline">\(PV = \frac{A}{r} - \frac{A}{r} \frac{1}{(1+r)^{n-1}}\)</span> <br></p>
 <p>Regarding PV2, note that <span class="math inline">\(\frac{A}{r}\)</span> gives the present value of the second perpetuity at time <code>t=n-1</code>. So, it needs to be discounted to time <code>t=0</code> by dividing it by <span class="math inline">\((1+r)^{n-1}\)</span>.</p>
-
-
 </section>
 </section>
+</section>
+<section id="some-examples" class="level2">
+<h2 class="anchored" data-anchor-id="some-examples">Some examples</h2>
+<p>Let’s go through some examples…</p>
+<p><strong>Example 1</strong> <br> Pension fund manager says that $1 Million per year mush be paid to retirees, starting in 10 years, and continuing for 30 years. If the annual discount rate for plan liabilities is 5% compounded annually, what is the present value of the pension fund?</p>
+<p>Let’s start with drawing the timeline: <br> t=0, t=1, t=2, …, t=9, t=10 ($1M), t=11 ($1M), …, t=39 ($1M).</p>
+<p>Let’s denote the annual payment as <span class="math inline">\(A = 1,000,000\)</span>, the interest rate as <span class="math inline">\(r = 0.05\)</span>, and the number of periods as <span class="math inline">\(n = 30\)</span>.</p>
+<p><span class="math inline">\(PV(@t=9) = \frac{A}{r} - \frac{A}{r} \frac{1}{(1+r)^{n-1}}\)</span> <br> <span class="math inline">\(PV(@t=0) = PV(@t=9) \cdot \frac{1}{(1+r)^{9}}\)</span> <br></p>
+<p>and we will get the following value: <br> <span class="math inline">\(PV(@t=0) \approx 9,909,219\)</span></p>
+
+
 </section>
 
 </main> <!-- /main -->

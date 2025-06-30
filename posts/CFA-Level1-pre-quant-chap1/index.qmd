@@ -172,3 +172,20 @@ $PV = \frac{A}{r} - \frac{A}{r} \frac{1}{(1+r)^{n-1}}$ <br>
 
 Regarding PV2, note that $\frac{A}{r}$ gives the present value of the second perpetuity at time `t=n-1`. So, it needs to be discounted to time `t=0` by dividing it by $(1+r)^{n-1}$.
 
+
+## Some examples
+Let's go through some examples...
+
+**Example 1** <br>
+Pension fund manager says that $1 Million per year mush be paid to retirees, starting in 10 years, and continuing for 30 years. If the annual discount rate for plan liabilities is 5% compounded annually, what is the present value of the pension fund?
+
+Let's start with drawing the timeline: <br>
+t=0, t=1, t=2, ..., t=9, t=10 ($1M), t=11 ($1M), ..., t=39 ($1M).
+
+Let's denote the annual payment as $A = 1,000,000$, the interest rate as $r = 0.05$, and the number of periods as $n = 30$.
+
+$PV(@t=9) = \frac{A}{r} - \frac{A}{r} \frac{1}{(1+r)^{n-1}}$ <br>
+$PV(@t=0) = PV(@t=9) \cdot \frac{1}{(1+r)^{9}}$ <br>
+
+and we will get the following value: <br>
+$PV(@t=0) \approx 9,909,219$
