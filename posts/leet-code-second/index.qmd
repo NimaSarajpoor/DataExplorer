@@ -1,0 +1,119 @@
+---
+title: "leet code 1"
+description: "Digging into the leet code probelem 2"
+date: "2025-06-30"
+categories:
+  - python
+  - programming
+---
+
+Link: https://leetcode.com/problems/add-two-numbers/description/
+
+With the arrival of LLM such as ChatGPT that are capable of answering simple-to-medium questions, getting the code that works for us may not be that hard. However, I still think it is important to understand the problem and the solution. We would like to think about "why". We let LLM handle the "how" part. In this post, we will try to understand the problem and the solution for the first leet code problem: Two Sum.
+
+
+## Problem Statement
+You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
+
+```{markdown}
+Example: 
+342: 2 -> 4 -> 3
+465: 5 -> 6 -> 4
+Result: 807: 7 -> 0 -> 8
+```
+
+
+## Solution
+First, note that the problem says 'two non-empty linked lists'. This means that the objects that are provided as input are of type `linked list`. It is important to understand the properties of this object. 
+
+
+**Note:** <br>
+The `linked list` is a data structure that consists of nodes, where each node contains a value and a reference to the next node in the list. The `ListNode` class defines the structure of each node in the linked list. If we look at the `code` window, we can see that the definition of class `ListNode` is provided. 
+
+```{python}
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+```
+
+So, if I assume there exists a linked list like: `A-->B-->C`, then it means `A` points to `B`, and `B` points to `C`. The last node, `C`, points to `None`, indicating the end of the list. In the linked list, the root is provided. So, if we start from `A`, we can access `B` by `A.next`, and we can access `C` by `B.next`, and so on. So, when we are asked to return the result
+as a linked list, we need to provide the root of that linked list.
+ 
+
+ ```{python}
+class ListNode(object):
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+def sum_linked_lists(L1, L2):
+    carry = 0
+    dummy_head = ListNode(0)
+    current = dummy_head
+
+    while L1 or L2 or carry:
+        val1 = L1.val if L1 else 0
+        val2 = L2.val if L2 else 0
+        total = val1 + val2 + carry
+        carry = total // 10
+        current.next = ListNode(total % 10)
+        current = current.next
+        if L1:
+            L1 = L1.next
+        if L2:
+            L2 = L2.next
+
+    return dummy_head.next
+```
+
+
+The function `sum_linked_lists`  was provided by co-pilot. Let's try to understand it step by step.  The first line of the function defines a variable `carry` that is initialized to 0. This variable will be used to keep track of any carry-over value when adding the digits of the two linked lists. The second line creates a dummy head node for the result linked list. This is a common technique to simplify the code when building linked lists. The `current` variable is initialized to point to the dummy head node, which will be used to build the result linked list. As we go through the linked lists, we will update `current` to point to the last node in the result linked list. However, since we already already have `dummy_head`, we can just return `dummy_head.next` at the end of the function to get the root node of the result linked list.
+
+
+Food for thought: <br>
+1. Why do we need to use a dummy head node? What would happen if we didn't use it?
+2. What is the time complexity of this algorithm? What is the space complexity?
+
+Let's discuss them: <br>
+1. The dummy head node simplifies the code by providing a starting point for the result linked list. Let's try to not use it, and see how this works. 
+
+```{python}
+def sum_linked_lists(L1, L2):
+    carry = 0
+    current = None
+    while L1 or L2 or carry:
+        val1 = L1.val if L1 else 0
+        val2 = L2.val if L2 else 0
+        total = val1 + val2 + carry
+        carry = total // 10
+        new_node = ListNode(total % 10)
+        
+        # Now that we have the new node, we need to add it to the result linked list. 
+        # However, we do not know the root of the result linked list yet.
+        # So, we need to check if current is None. If it is, we need to set current to the new node, and also set the result_root to the new node.
+        if current is None:
+            current = new_node  
+            result_root = current  
+            # to keep `result_root` as the root of the result linked list so that we can return it at the end.
+        else:
+            current.next = new_node
+            current = current.next
+            
+        if L1:
+            L1 = L1.next
+        if L2:
+            L2 = L2.next
+    return result_root
+```
+
+You can see the if-else block that needs to be added to check if the new node should be set as the root node or just attach it to the `next` of the current node. 
+
+2. The time complexity of this problem is $O(n+m)$, where $n$ and $m$ are the lengths of the two linked lists. The space complexity is also $O(n+m)$ because we are creating a new linked list to store the result. 
+
+
+
