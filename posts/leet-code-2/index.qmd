@@ -1,5 +1,5 @@
 ---
-title: "leet code 1"
+title: "leet code 2"
 description: "Digging into the leet code probelem 2"
 date: "2025-06-30"
 categories:

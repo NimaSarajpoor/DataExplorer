@@ -1,0 +1,34 @@
+---
+title: "code kata 1"
+description: "Digging into the code kata problem 1"
+date: "2025-06-30"
+categories:
+    - critical-thinking
+# image: system-design.png
+---
+
+Link: http://codekata.com/kata/kata01-supermarket-pricing/
+
+Code kata is a term used to describe a coding exercise that is designed to help programmers improve their skills. The term "kata" comes from martial arts, where it refers to a set of movements that are practiced repeatedly to improve technique. It can help with critical thinking and problem-solving skills. In this post, we will try to understand the problem and the solution for the first kata problem. 
+
+## Problem
+Some items in a supermarket have complex pricing. For example: <br>
+
+* three for a dollar (so what’s the price if I buy 4, or 5?)
+* $1.99/pound (so what does 4 ounces cost?)
+* Buy two, get one free (so does the third item have a price?)
+
+
+Let's think about the following items:
+1. does fractional money exist?
+2. when (if ever) does rounding take place?
+3. how do you keep an audit trail of pricing decisions (and do you need to)?
+4. are costs and prices the same class of thing?
+5. if a shelf of 100 cans is priced using “buy two, get one free”, how do you value the stock?
+
+## Discussion
+
+**Q: three for a dollar (so what’s the price if I buy 4, or 5?)** <br>
+A: Let's start with the first question. Since three items cost one dollar, the price for one seems to be `$1/3`. However, this decimal value is not practical in real life. We can round it up. Let's say the price for one item is `x`, where `x > 1/3`. In such case, $3x$ is larger than `$1`. Therefore, customer can be incentivized to purchase the `3-for-$1` deal. 
+
+TBC

@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2025-06-30">
-<meta name="description" content="Digging into the leet code probelem 2">
+<meta name="description" content="Digging into the code kata problem 1">
 
-<title>leet code 1 – DataExplorer</title>
+<title>code kata 1 – DataExplorer</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,41 +21,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -105,6 +70,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -151,15 +145,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">leet code 1</h1>
+      <h1 class="title">code kata 1</h1>
                   <div>
         <div class="description">
-          Digging into the leet code probelem 2
+          Digging into the code kata problem 1
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">python</div>
-                <div class="quarto-category">programming</div>
+                <div class="quarto-category">critical-thinking</div>
               </div>
                   </div>
   </div>
@@ -190,46 +183,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>Link: https://leetcode.com/problems/add-two-numbers/description/</p>
-<p>With the arrival of LLM such as ChatGPT that are capable of answering simple-to-medium questions, getting the code that works for us may not be that hard. However, I still think it is important to understand the problem and the solution. We would like to think about “why”. We let LLM handle the “how” part. In this post, we will try to understand the problem and the solution for the first leet code problem: Two Sum.</p>
-<section id="problem-statement" class="level2">
-<h2 class="anchored" data-anchor-id="problem-statement">Problem Statement</h2>
-<p>You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.</p>
-<p>You may assume the two numbers do not contain any leading zero, except the number 0 itself.</p>
-<pre><code>Example: 
-342: 2 -&gt; 4 -&gt; 3
-465: 5 -&gt; 6 -&gt; 4
-Result: 807: 7 -&gt; 0 -&gt; 8</code></pre>
+<p>Link: http://codekata.com/kata/kata01-supermarket-pricing/</p>
+<p>Code kata is a term used to describe a coding exercise that is designed to help programmers improve their skills. The term “kata” comes from martial arts, where it refers to a set of movements that are practiced repeatedly to improve technique. It can help with critical thinking and problem-solving skills. In this post, we will try to understand the problem and the solution for the first kata problem.</p>
+<section id="problem" class="level2">
+<h2 class="anchored" data-anchor-id="problem">Problem</h2>
+<p>Some items in a supermarket have complex pricing. For example: <br></p>
+<ul>
+<li>three for a dollar (so what’s the price if I buy 4, or 5?)</li>
+<li>$1.99/pound (so what does 4 ounces cost?)</li>
+<li>Buy two, get one free (so does the third item have a price?)</li>
+</ul>
+<p>Let’s think about the following items: 1. does fractional money exist? 2. when (if ever) does rounding take place? 3. how do you keep an audit trail of pricing decisions (and do you need to)? 4. are costs and prices the same class of thing? 5. if a shelf of 100 cans is priced using “buy two, get one free”, how do you value the stock?</p>
 </section>
-<section id="solution" class="level2">
-<h2 class="anchored" data-anchor-id="solution">Solution</h2>
-<p>First, note that the problem says ‘two non-empty linked lists’. This means that the objects that are provided as input are of type <code>linked list</code>. It is important to understand the properties of this object.</p>
-<p><strong>Note:</strong> <br> The <code>linked list</code> is a data structure that consists of nodes, where each node contains a value and a reference to the next node in the list. The <code>ListNode</code> class defines the structure of each node in the linked list. If we look at the <code>code</code> window, we can see that the definition of class <code>ListNode</code> is provided.</p>
-<div id="e915dda9" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definition for singly-linked list.</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># class ListNode(object):</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">#     def __init__(self, val=0, next=None):</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">#         self.val = val</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">#         self.next = next</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>So, if I assume there exists a linked list like: <code>A--&gt;B--&gt;C</code>, then it means <code>A</code> points to <code>B</code>, and <code>B</code> points to <code>C</code>. The last node, <code>C</code>, points to <code>None</code>, indicating the end of the list. In the linked list, the root is provided. So, if we start from <code>A</code>, we can access <code>B</code> by <code>A.next</code>, and we can access <code>C</code> by <code>B.next</code>, and so on. So, when we are asked to return the result as a linked list, we need to provide the root of that linked list.</p>
-<p>class ListNode(object): def <strong>init</strong>(self, val=0, next=None): self.val = val self.next = next</p>
-<p>def sum_linked_lists(L1, L2): carry = 0 dummy_head = ListNode(0) current = dummy_head</p>
-<pre><code>while L1 or L2 or carry:
-    val1 = L1.val if L1 else 0
-    val2 = L2.val if L2 else 0
-    total = val1 + val2 + carry
-    carry = total // 10
-    current.next = ListNode(total % 10)
-    current = current.next
-    if L1:
-        L1 = L1.next
-    if L2:
-        L2 = L2.next
-
-return dummy_head.next</code></pre>
-<p>```</p>
-<p>The function above was provided by co-pilot.</p>
+<section id="discussion" class="level2">
+<h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
+<p><strong>Q: three for a dollar (so what’s the price if I buy 4, or 5?)</strong> <br> A: Let’s start with the first question. Since three items cost one dollar, the price for one seems to be <code>$1/3</code>. However, this decimal value is not practical in real life. We can round it up. Let’s say the price for one item is <code>x</code>, where <code>x &gt; 1/3</code>. In such case, <span class="math inline">\(3x\)</span> is larger than <code>$1</code>. Therefore, customer can be incentivized to purchase the <code>3-for-$1</code> deal.</p>
+<p>TBC</p>
 
 
 </section>
