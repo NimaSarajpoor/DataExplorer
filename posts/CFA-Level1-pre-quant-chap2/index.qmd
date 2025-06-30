@@ -1,8 +1,8 @@
 ---
-title: "Interest Rates, Present Value, and Future Value"
+title: "Organizing, Visualizing, and Describing Data"
 date: "2025-06-30"
 categories:
   - CFA
   - Quant
-image: interest-rate.jpg
+# image: interest-rate.jpg
 ---
