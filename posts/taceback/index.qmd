@@ -1,0 +1,39 @@
+---
+title: "traceback"
+description: "Understanding and using the traceback module in Python for debugging"
+date: "2025-06-30"
+categories:
+    - python 
+    - programming
+# image: system-design.png
+---
+
+One of the most useful tools in Python for debugging is the `traceback` module. It provides a way to extract, format, and print stack traces of Python programs. This can be incredibly helpful when you encounter an error and need to understand where it originated. Let's first consider a simple example that does not handle exceptions properly, and provide no `traceback` information.
+
+```{python}
+def divide(a, b):
+    return a / b
+
+try:
+    result = divide(10, 0)
+except Exception as e:
+    print("An error occurred:", e)
+```
+
+
+However, it does not give you any information about where the error occurred in the code. To get more detailed information, you can use the `traceback` module.
+
+```{python}
+import traceback
+
+def divide(a, b):
+    return a / b
+
+try:
+    result = divide(10, 0)
+except Exception as e:
+    print("An error occurred:", e)
+    traceback.print_exc()
+```
+
+

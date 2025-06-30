@@ -1,0 +1,12 @@
+{
+  "hash": "6a0cf6c59f2a2121c398468921c08d8e",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"traceback\"\ndescription: \"Understanding and using the traceback module in Python for debugging\"\ndate: \"2025-06-30\"\ncategories:\n    - python \n    - programming\n# image: system-design.png\n---\n\nOne of the most useful tools in Python for debugging is the `traceback` module. It provides a way to extract, format, and print stack traces of Python programs. This can be incredibly helpful when you encounter an error and need to understand where it originated. Let's first consider a simple example that does not handle exceptions properly, and provide no `traceback` information.\n\n::: {#a4a72c3e .cell execution_count=1}\n``` {.python .cell-code}\ndef divide(a, b):\n    return a / b\n\ntry:\n    result = divide(10, 0)\nexcept Exception as e:\n    print(\"An error occurred:\", e)\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nAn error occurred: division by zero\n```\n:::\n:::\n\n\nWhen you run this code, it will output:\n```{raw}\nAn error occurred: division by zero\n```\n\nHowever, it does not give you any information about where the error occurred in the code. To get more detailed information, you can use the `traceback` module.\n\n::: {#2281f6b2 .cell execution_count=2}\n``` {.python .cell-code}\nimport traceback\n\ndef divide(a, b):\n    return a / b\n\ntry:\n    result = divide(10, 0)\nexcept Exception as e:\n    print(\"An error occurred:\", e)\n    traceback.print_exc()\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nAn error occurred: division by zero\n```\n:::\n\n::: {.cell-output .cell-output-stderr}\n```\nTraceback (most recent call last):\n  File \"/var/folders/mj/10qd82nj4gz6drm4xmsg30r40000gn/T/ipykernel_81933/1302253731.py\", line 7, in <module>\n    result = divide(10, 0)\n  File \"/var/folders/mj/10qd82nj4gz6drm4xmsg30r40000gn/T/ipykernel_81933/1302253731.py\", line 4, in divide\n    return a / b\n           ~~^~~\nZeroDivisionError: division by zero\n```\n:::\n:::\n\n\nWhen you run this code, it will output:\n```{raw}\nAn error occurred: division by zero\nTraceback (most recent call last):\n  File \"script.py\", line 8, in <module>\n    result = divide(10, 0)\n  File \"script.py\", line 3, in divide\n    return a / b\nZeroDivisionError: division by zero\n```\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
