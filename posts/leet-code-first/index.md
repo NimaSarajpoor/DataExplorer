@@ -11,7 +11,8 @@ categories:
 Link: https://leetcode.com/problems/two-sum/description/
 
 
-With the arrival of LLM such as ChatGPT that are capable of answering simple-to-medium questions, getting the code that works for us may not be that hard. However, I still think it is important to understand the problem and the solution. We would like to think about "why". 
+With the arrival of LLM such as ChatGPT that are capable of answering simple-to-medium questions, getting the code that works for us may not be that hard. However, I still think it is important to understand the problem and the solution. We would like to think about "why". We let LLM handle the "how" part. In this post, we will try to understand the problem and the solution for the first leet code problem: Two Sum.
+
 
 ## Problem Statement
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order. Example: `nums=[5, 1, 2, 10]`, `target = 15`, the answer is `[0, 3]` because `5 + 10 = 15`.
